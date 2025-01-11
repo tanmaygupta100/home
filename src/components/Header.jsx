@@ -31,7 +31,6 @@ const Header = () => {
                 return [];
         }
     };
-
     const buttons = getButtons();
 
 
