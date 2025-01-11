@@ -13,6 +13,10 @@
   }
 }
 
+.pi {
+  font-size: 1.5rem;  /* Adjust size as needed */
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
