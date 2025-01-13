@@ -68,9 +68,41 @@ const Header = () => {
             {/* ABOUT modal: */}
             <Dialog header="About Me" visible={aboutModal} onHide={() => setAboutModal(false)}
                 className="custom-dialog" style={{ width: '50vw', fontFamily:'Gluten'||'Arial' }}>
-                <p className="m-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                <div className="m-0 lg:text-lg sm:text-md">
+
+                    Current role: <span className="font-bold">Junior Web Developer</span> for Littlefoot Digital (Canadian startup)
+                    <br /><br />
+                    
+                    <span className="font-bold">Software Engineering</span> from <Button link className="font-bold underline" onClick={() => window.open('https://www.psu.edu/', '_blank')}> Penn State University</Button> (Class of 2025)
+                    <ul className="list=disc ml-6">
+                        <li>
+                            Jane E. Cooper Honors Scholar
+                        </li>
+                        <li>
+                            Dean's List Student (Over 3.5/4.0 GPA)
+                        </li>
+                        <li>
+                            Engineering Club President (2019-2021)
+                        </li>
+                    </ul>
+                    <br />
+
+                    Technical Proficiencies:
+                    <ul className="list=disc ml-6">
+                        <li>
+                            Frontend: <span className="font-bold">JavaScript, React.js, CSS, HTML</span>
+                        </li>
+                        <li>
+                            Backend: <span className="font-bold">PHP, Python, C#</span>
+                        </li>
+                        <li>
+                            Frameworks/Engines: <span className="font-bold">Laravel (PHP), Unity (C#), Tailwind CSS</span>
+                        </li>
+                        <li>
+                            Development: <span className="font-bold">Laravel (PHP), Unity (C#), Tailwind CSS</span>
+                        </li>
+                    </ul>
+                </div>
             </Dialog>
             {/* CONTACT modal */}
             <Dialog header="Contact Information" visible={contactModal} onHide={() => setContactModal(false)}
