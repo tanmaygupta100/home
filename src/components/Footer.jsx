@@ -1,3 +1,5 @@
+import './footer.css';
+
 const Footer = () => {
     return (
         <div className="main-content">
@@ -23,7 +25,7 @@ const Footer = () => {
                     {Array.from({ length: 4 }).map((_, index) => (
                         <div
                             key={`horizontal-${index}`}
-                            className="w-full h-[2px] bg-black absolute"
+                            className="w-full h-[2px] bg-black absolute animated-line"
                             style={{ bottom: `${index * 36}px` }}
                         ></div>
                     ))}

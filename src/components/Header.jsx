@@ -2,36 +2,40 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import { Button } from 'primereact/button';
+import { Dialog } from 'primereact/dialog';
 import 'primeicons/primeicons.css';
+import CustomButton from './CustomButton';
 
 
 const Header = () => {
     const location = useLocation(); // Avoids needing to pass current path to App.js.
-    const [hoveredIndex, setHoveredIndex] = useState(null); // Tracks which button is hovered.
-    const [activeIndex, setActiveIndex] = useState(null); // Tracks which button is active (clicked).
+    const [aboutModal, setAboutModal] = useState(false); // Controls visibility of PrimeReact model.
+    const [contactModal, setContactModal] = useState(false);
+
 
     const getButtons = () => {
         switch(location.pathname) {
             case '/':
                 return [
-                    { to: '#', label: 'About' },
-                    { to: '#', label: 'Contact' },
+                    { to: '#', label: 'About', onClick: () => setAboutModal(true), colour: 'grey' },
+                    { to: '#', label: 'Contact', onClick: () => setContactModal(true), colour: 'grey' },
                 ];
             case '/skills':
                 return [
-                    { to: '/projects', label: 'Projects', icon: 'pi pi-graduation-cap' },
-                    { to: '/', label: 'Home' },
+                    { to: '/projects', label: 'Projects', icon: 'pi pi-wrench', colour: 'yellow' },
+                    { to: '/', label: 'Home', colour: 'grey' },
                 ];
             case '/projects':
                 return [
-                    { to: '/skills', label: 'Skills', icon: 'pi pi-lightbulb' },
-                    { to: '/', label: 'Home', icon: 'pi pi-home' },
+                    { to: '/skills', label: 'Skills', icon: 'pi pi-graduation-cap', colour: 'blue' },
+                    { to: '/', label: 'Home', icon: 'pi pi-home', colour: 'grey' },
                 ];
             default:
                 return [];
         }
     };
     const buttons = getButtons();
+
 
 
     return (
@@ -47,31 +51,47 @@ const Header = () => {
             </div>
             <div>
                 <nav className="flex flex-row gap-4">
-                    {buttons.map((btn, index) => (
-                        <Link key={index} to={btn.to} >
-                            <Button
-                                label={btn.label}
-                                icon={btn.icon}
-                                className="rounded-xl border-2 border-black py-4 px-4 drop-shadow-lg
-                                    font-bold text-2xl gap-x-2 flex justify-center items-center"
-                                style={{
-                                    backgroundColor: activeIndex === index
-                                        ? '#a0a5ab' // Active (clicked) color
-                                        : hoveredIndex === index
-                                        ? '#bcc2ca' // Hover color
-                                        : '#e2e8f0', // Default color
-                                    boxShadow: '4px 4px 0px 0px rgba(0, 0, 0, 1)',
-                                    transition: 'all 0.3s ease', // Smooth transition
-                                }}
-                                onMouseEnter={() => setHoveredIndex(index)} // Set hover index
-                                onMouseLeave={() => setHoveredIndex(null)} // Reset hover
-                                onMouseDown={() => setActiveIndex(index)} // When clicked
-                                onMouseUp={() => setActiveIndex(null)} // When released
-                            />
-                        </Link>
-                    ))}
+                {buttons.map((btn, index) => (
+                    <Link key={index} to={btn.to}>
+                    <CustomButton
+                        label={btn.label}
+                        icon={btn.icon}
+                        colour={btn.colour}
+                        onClick={btn.onClick}
+                        hasWave={true}
+                    />
+                    </Link>
+                ))}
                 </nav>
             </div>
+
+            {/* ABOUT modal: */}
+            <Dialog header="About Me" visible={aboutModal} onHide={() => setAboutModal(false)}
+                className="custom-dialog" style={{ width: '50vw', fontFamily:'Gluten'||'Arial' }}>
+                <p className="m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </Dialog>
+            {/* CONTACT modal */}
+            <Dialog header="Contact Information" visible={contactModal} onHide={() => setContactModal(false)}
+                className="custom-dialog" style={{ width: '50vw', fontFamily:'Gluten'||'Arial' }}>
+                <p className="m-0 flex flex-col items-start gap-y-2">
+                    Click to go to my...<br/>
+                    <Button label="LinkedIn" className='text-xl' icon="pi pi-linkedin"
+                        link onClick={() =>  window.open('https://www.linkedin.com/in/tanmaygupta100/', '_blank')}
+                    />
+                    <Button label="GitHub" className='text-xl' icon="pi pi-github"
+                        link onClick={() =>  window.open('https://github.com/tanmaygupta100', '_blank')}
+                    />
+                    <a href="mailto:getgupta.tg@gmail.com">
+                        <Button link
+                            label="Email" 
+                            className="text-xl" 
+                            icon="pi pi-envelope"
+                        />
+                    </a>
+                </p>
+            </Dialog>
         </header>
     );
 

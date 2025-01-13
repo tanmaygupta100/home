@@ -1,0 +1,13 @@
+/* footer.css */
+@keyframes moveUp {
+    0% {
+        transform: translateY(800%);
+    }
+    100% {
+        transform: translateY(-1000%);
+    }
+}
+
+.animated-line {
+    animation: moveUp 1s linear infinite;
+}
