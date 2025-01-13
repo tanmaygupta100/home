@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
@@ -8,6 +8,7 @@ import CustomButton from './CustomButton';
 
 
 const Header = () => {
+    const navigate = useNavigate();
     const location = useLocation(); // Avoids needing to pass current path to App.js.
     const [aboutModal, setAboutModal] = useState(false); // Controls visibility of PrimeReact model.
     const [contactModal, setContactModal] = useState(false);
@@ -40,7 +41,9 @@ const Header = () => {
 
     return (
         <header className='flex justify-between p-10 py-7 w-full items-center border-b-4 border-black' style={{background:'#A2D8B4'}}>
-            <div className='flex flex-row gap-x-5 items-center'>
+            <div className='flex flex-row gap-x-5 items-center cursor-pointer'
+                onClick={() => navigate('/')}
+            >
                 <h1 className="text-right font-extrabold text-xl sm:text-2xl lg:text-4xl">
                     TANMAY<br/>GUPTA
                 </h1>

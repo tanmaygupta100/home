@@ -13,15 +13,19 @@ import 'primeicons/primeicons.css';
 
 function App() {
   return (
-    <>
-        <Header />
+    <div className="main-wrapper">
+      <Header />
+      <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
+      </div>
+      <div className="footer-wrapper">
         <Footer />
-    </>
+      </div>
+    </div>
   );
 }
 

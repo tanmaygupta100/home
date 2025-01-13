@@ -3,7 +3,7 @@ import './footer.css';
 const Footer = () => {
     return (
         <div className="main-content">
-            <footer className="w-full absolute bottom-0 flex flex-col items-center">
+            <footer className="w-full flex flex-col items-center">
                 <div className="flex gap-44 mt-2 relative">
                     <div className="w-full h-[40px] bg-white absolute top-0 z-10"></div>
                     {/* Angled Lines */}
