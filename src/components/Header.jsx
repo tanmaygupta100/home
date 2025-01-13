@@ -18,18 +18,18 @@ const Header = () => {
         switch(location.pathname) {
             case '/':
                 return [
-                    { to: '#', label: 'About', onClick: () => setAboutModal(true), colour: 'grey' },
-                    { to: '#', label: 'Contact', onClick: () => setContactModal(true), colour: 'grey' },
+                    { to: '#', label: 'About', icon: 'pi pi-id-card', onClick: () => setAboutModal(true), colour: 'grey' },
+                    { to: '#', label: 'Contact', icon: 'pi pi-share-alt', onClick: () => setContactModal(true), colour: 'grey' },
                 ];
             case '/skills':
                 return [
+                    { to: '/', label: 'Home', icon: 'pi pi-home', colour: 'grey' },
                     { to: '/projects', label: 'Projects', icon: 'pi pi-wrench', colour: 'yellow' },
-                    { to: '/', label: 'Home', colour: 'grey' },
                 ];
             case '/projects':
                 return [
-                    { to: '/skills', label: 'Skills', icon: 'pi pi-graduation-cap', colour: 'blue' },
                     { to: '/', label: 'Home', icon: 'pi pi-home', colour: 'grey' },
+                    { to: '/skills', label: 'Skills', icon: 'pi pi-graduation-cap', colour: 'blue' },
                 ];
             default:
                 return [];
@@ -40,7 +40,7 @@ const Header = () => {
 
 
     return (
-        <header className='flex justify-between p-10 py-7 w-full items-center border-b-4 border-black' style={{background:'#A2D8B4'}}>
+        <header className='flex justify-between p-2 lg:p-10 py-2 lg:py-7 w-full items-center border-b-4 border-black' style={{background:'#A2D8B4'}}>
             <div className='flex flex-row gap-x-5 items-center cursor-pointer'
                 onClick={() => navigate('/')}
             >
@@ -53,7 +53,7 @@ const Header = () => {
                 </h1>
             </div>
             <div>
-                <nav className="flex flex-row gap-4">
+                <nav className="flex flex-col gap-2 lg:gap-4 items-end">
                 {buttons.map((btn, index) => (
                     <Link key={index} to={btn.to}>
                     <CustomButton
@@ -69,8 +69,11 @@ const Header = () => {
             </div>
 
             {/* ABOUT modal: */}
-            <Dialog header="About Me" visible={aboutModal} onHide={() => setAboutModal(false)}
-                className="custom-dialog" style={{ width: '50vw', fontFamily:'Gluten'||'Arial' }}>
+            <Dialog
+                header="About Me" visible={aboutModal} onHide={() => setAboutModal(false)}
+                className="custom-dialog"
+                style={{ width: '80vw', fontFamily:'Gluten'||'Arial' }}
+            >
                 <div className="m-0 lg:text-lg sm:text-md">
 
                     Current role: <span className="font-bold">Junior Web Developer</span> for Littlefoot Digital (Canadian startup)
@@ -108,8 +111,11 @@ const Header = () => {
                 </div>
             </Dialog>
             {/* CONTACT modal */}
-            <Dialog header="Contact Information" visible={contactModal} onHide={() => setContactModal(false)}
-                className="custom-dialog" style={{ width: '50vw', fontFamily:'Gluten'||'Arial' }}>
+            <Dialog
+                header="Contact Information" visible={contactModal} onHide={() => setContactModal(false)}
+                className="custom-dialog"
+                style={{ width: '80vw', fontFamily:'Gluten'||'Arial' }}
+            >
                 <p className="m-0 flex flex-col items-start gap-y-2">
                     Click to go to my...<br/>
                     <Button label="LinkedIn" className='text-xl' icon="pi pi-linkedin"

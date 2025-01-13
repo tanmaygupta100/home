@@ -21,7 +21,7 @@ const LargeButton = ({ label, colour, desc, onClick }) => {
                     {label}
                 </div>
                 
-                <div className='lg:text-xl lg:font-bold font-medium text-md'>
+                <div className='lg:text-xl lg:font-bold font-medium text-base'>
                     {desc}
                 </div>
 
