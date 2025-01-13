@@ -1,9 +1,9 @@
 .custom-button {
-    padding: 12px 20px;
+    padding: 12px 10px;
     border: 2px solid black;
     border-radius: 12px;
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: semibold;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
     box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
