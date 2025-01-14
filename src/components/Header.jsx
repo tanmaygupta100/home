@@ -71,8 +71,8 @@ const Header = () => {
             {/* ABOUT modal: */}
             <Dialog
                 header="About Me" visible={aboutModal} onHide={() => setAboutModal(false)}
-                className="custom-dialog"
-                style={{ width: '80vw', fontFamily:'Gluten'||'Arial' }}
+                className="custom-dialog w-4/5 mx-5 lg:w-1/3 lg:mx-0"
+                style={{ fontFamily:'Gluten'||'Arial' }}
             >
                 <div className="m-0 lg:text-lg sm:text-md">
                     <p>Current role: <span className="font-bold">Junior Web Developer</span> for Littlefoot Digital (Canadian startup)</p>
@@ -101,8 +101,8 @@ const Header = () => {
             {/* CONTACT modal */}
             <Dialog
                 header="Contact Information" visible={contactModal} onHide={() => setContactModal(false)}
-                className="custom-dialog"
-                style={{ width: '80vw', fontFamily:'Gluten'||'Arial' }}
+                className="custom-dialog w-4/5 mx-5 lg:w-1/3 lg:mx-0"
+                style={{ fontFamily:'Gluten'||'Arial' }}
             >
                 <p className="m-0 flex flex-col items-start gap-y-2">
                     Click to go to my...<br/>
