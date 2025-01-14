@@ -75,35 +75,26 @@ const Header = () => {
                 style={{ width: '80vw', fontFamily:'Gluten'||'Arial' }}
             >
                 <div className="m-0 lg:text-lg sm:text-md">
-
-                    Current role: <span className="font-bold">Junior Web Developer</span> for Littlefoot Digital (Canadian startup)
-                    <br /><br />
+                    <p>Current role: <span className="font-bold">Junior Web Developer</span> for Littlefoot Digital (Canadian startup)</p>
                     
-                    <span className="font-bold">Software Engineering</span> from <Button link className="font-bold underline" onClick={() => window.open('https://www.psu.edu/', '_blank')}> Penn State University</Button> (Class of 2025)
-                    <ul className="list=disc ml-6">
-                        <li>
-                            Jane E. Cooper Honors Scholar
-                        </li>
-                        <li>
-                            Dean's List Student (Over 3.5/4.0 GPA)
-                        </li>
-                        <li>
-                            Engineering Club President (2019-2021)
-                        </li>
+                    <p className="mt-4">
+                        <span className="font-bold">Software Engineering</span>
+                        {` from `}
+                        <Button link className="font-bold underline" onClick={() => window.open('https://www.psu.edu/', '_blank')}>Penn State University</Button>
+                        {` (Class of 2025)`}
+                    </p>
+                    
+                    <ul className="list-disc ml-6">
+                        <li>Jane E. Cooper Honors Scholar</li>
+                        <li>Dean's List Student (Over 3.5/4.0 GPA)</li>
+                        <li>Engineering Club President (2019-2021)</li>
                     </ul>
-                    <br />
 
-                    Technical Proficiencies:
-                    <ul className="list=disc ml-6">
-                        <li>
-                            Frontend: <span className="font-bold">JavaScript, React.js, CSS, HTML</span>
-                        </li>
-                        <li>
-                            Backend: <span className="font-bold">PHP, Python, C#</span>
-                        </li>
-                        <li>
-                            Frameworks/Engines: <span className="font-bold">Laravel (PHP), Unity (C#), Tailwind CSS</span>
-                        </li>
+                    <p className="mt-4">Technical Proficiencies:</p>
+                    <ul className="list-disc ml-6">
+                        <li>Frontend: <span className="font-bold">JavaScript, React.js, CSS, HTML</span></li>
+                        <li>Backend: <span className="font-bold">PHP, Python, C#</span></li>
+                        <li>Frameworks/Engines: <span className="font-bold">Laravel (PHP), Unity (C#), Tailwind CSS</span></li>
                     </ul>
                 </div>
             </Dialog>

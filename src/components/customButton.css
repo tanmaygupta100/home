@@ -52,12 +52,18 @@
 }
 
 
-.custom-dialog .p-dialog-header {
-    border: 3px solid black;
-    border-bottom: 0px;
+
+
+.custom-dialog {
+    border: 4px solid black;
 }
 
 .custom-dialog .p-dialog-content {
-    border: 3px solid black;
-    border-top: 0px;
+    padding-top: 20px;
+}
+
+.custom-dialog .p-dialog-header {
+    border-bottom: 3px solid #A2D8B4;
+    background: #A2D8B4;
+    padding-bottom: 10px;
 }
