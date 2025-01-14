@@ -5,12 +5,28 @@ const Footer = () => {
         <div className="main-content">
             <footer className="w-full flex flex-col items-center">
                 <div className="flex gap-44 mt-2 relative">
-                <div
-                    className="w-full h-[100px] absolute top-0 z-10"
-                    style={{
-                        background: "linear-gradient(to bottom, white 40%, rgba(255, 255, 255, 0) 100%)",
-                    }}
-                ></div>
+                    
+                    {/* White Gradient */}
+                    <div
+                        className="w-full h-[100px] absolute top-0 z-10"
+                        style={{
+                            background: "linear-gradient(to bottom, white 55%, rgba(255, 255, 255, 0) 100%)",
+                        }}
+                    />
+                    <div
+                        className="w-[50px] h-full absolute right-0 z-10"
+                        style={{
+                            background: "linear-gradient(to left, white 8%, rgba(255, 255, 255, 0) 100%)",
+                        }}
+                    />
+                    <div
+                        className="w-[50px] h-full absolute left-0 z-10"
+                        style={{
+                            background: "linear-gradient(to right, white 8%, rgba(255, 255, 255, 0) 100%)",
+                        }}
+                    />
+                    
+
                     {/* Angled Lines */}
                     {Array.from({ length: 11 }).map((_, index) => {
                         const angle = (index - 5) * -10;

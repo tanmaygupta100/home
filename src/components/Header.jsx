@@ -104,9 +104,6 @@ const Header = () => {
                         <li>
                             Frameworks/Engines: <span className="font-bold">Laravel (PHP), Unity (C#), Tailwind CSS</span>
                         </li>
-                        <li>
-                            Development: <span className="font-bold">Laravel (PHP), Unity (C#), Tailwind CSS</span>
-                        </li>
                     </ul>
                 </div>
             </Dialog>
