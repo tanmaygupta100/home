@@ -31,6 +31,7 @@ html, body {
   min-height: 100vh;  /* Use full height */
   position: relative;
   flex-grow: 1;  /* Allows the content area to fill available space */
+  z-index: 1;
 }
 
 /* Main content takes available space */
@@ -39,11 +40,16 @@ html, body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  z-index: 2;
 }
 
 /* Footer wrapper, should stay at bottom */
 .footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  z-index: 0;
 }
 
 /* Footer styles */

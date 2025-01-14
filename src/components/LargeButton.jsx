@@ -16,7 +16,7 @@ const LargeButton = ({ label, colour, desc, onClick }) => {
 
     return (
         <button className={`${buttonColour}`} onClick={onClick}>
-            <div className='flex flex-col items-start lg:gap-y-10 gap-y-2'>
+            <div className='flex flex-col items-start lg:gap-y-10 gap-y-2 px-2'>
                 <div className='lg:text-3xl font-bold text-xl'>
                     {label}
                 </div>
