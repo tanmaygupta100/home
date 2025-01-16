@@ -7,8 +7,8 @@ const Skills = () => {
     const [schoolBox, setSchoolBox] = useState(true)
 
     return (
-        <div className="flex justify-center">
-            <div className='absolute top-1/5 mt-5 flex lg:flex-row flex-col lg:w-4/5 mx-5 gap-x-16 gap-y-1 lg:items-top justify-center h-full'>
+        <div className="flex justify-center overflow-y-auto h-full">
+            <div className='absolute top-1/5 mt-5 flex lg:flex-row flex-col lg:w-4/5 mx-5 gap-x-16 gap-y-1 lg:items-top justify-center'>
 
                 {/* Skills Panel */}
                 <div>
@@ -21,7 +21,10 @@ const Skills = () => {
                     { skillsBox &&
                         <div
                             className="p-5 m-5 mb-0 lg:ml-10 ml-0 w-full"
-                            style={{border:'black 3px solid', borderRadius:'10px', backgroundColor:'#E6EEFF'}}
+                            style={{border:'black 3px solid', borderRadius:'10px', backgroundColor:'#E6EEFF',
+                                maxHeight: skillsBox ? '100%' : '0',
+                                overflow: skillsBox ? 'visible' : 'hidden',
+                            }}
                         >
                             {/* Coding Languages: */}
                             <div className="text-center">
@@ -69,7 +72,10 @@ const Skills = () => {
                     { schoolBox &&
                         <div
                             className="p-5 m-5 lg:ml-10 ml-0 w-full"
-                            style={{border:'black 3px solid', borderRadius:'10px', backgroundColor:'#E6EEFF'}}
+                            style={{border:'black 3px solid', borderRadius:'10px', backgroundColor:'#E6EEFF',
+                                maxHeight: skillsBox ? '100%' : '0',
+                                overflow: skillsBox ? 'visible' : 'hidden',
+                            }}
                         >
                             <div className="justify-center items-center flex flex-row">
                                 <div>
