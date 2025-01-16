@@ -7,8 +7,8 @@ const Skills = () => {
     const [schoolBox, setSchoolBox] = useState(true)
 
     return (
-        <div className="flex flex-wrap justify-center overflow-y-auto h-full">
-            <div className='absolute top-1/5 mt-5 flex lg:flex-row flex-col lg:w-4/5 mx-5 gap-x-16 gap-y-1 lg:items-top justify-center'>
+        <div className="flex justify-center overflow-y-full h-full">
+            <div className='mt-5 flex lg:flex-row flex-col w-full h-full lg:w-4/5 mx-5 gap-x-16 lg:items-start justify-center'>
 
                 {/* Skills Panel */}
                 <div>
