@@ -7,7 +7,7 @@ const Skills = () => {
     const [schoolBox, setSchoolBox] = useState(true)
 
     return (
-        <div className="flex justify-center pb-5">
+        <div className="flex justify-center pb-5 flex-wrap relative">
             <div
                 className='flex lg:flex-row flex-col
                     mt-5 overflow-y-auto h-full
