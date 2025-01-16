@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SectionButton from "../components/SectionButton";
+import psuLogo from '../images/psu-logo.png';
 
 const Skills = () => {
     const [skillsBox, setSkillsBox] = useState(true)
@@ -7,7 +8,7 @@ const Skills = () => {
 
     return (
         <div className="flex justify-center">
-            <div className='absolute top-1/5 mt-5 flex lg:flex-row flex-col lg:w-4/5 mx-5 gap-x-16 gap-y-1 lg:items-top justify-center'>
+            <div className='absolute top-1/5 mt-5 flex lg:flex-row flex-col lg:w-4/5 mx-5 gap-x-16 gap-y-1 lg:items-top justify-center h-full'>
 
                 {/* Skills Panel */}
                 <div>
@@ -73,7 +74,7 @@ const Skills = () => {
                             <div className="justify-center items-center flex flex-row">
                                 <div>
                                     <img
-                                        src="/psu-logo.png" alt=""
+                                        src={psuLogo} alt=""
                                         style={{ width: '100px', height: 'auto' }}
                                     />
                                 </div>

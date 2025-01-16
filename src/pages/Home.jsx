@@ -7,7 +7,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="flex m-10 items-center lg:flex-row flex-col lg:gap-x-10 gap-y-10">
+        <div className="flex mx-5 my-10 items-center lg:flex-row flex-col lg:gap-x-10 gap-y-10 h-full">
             <LargeButton
                 colour="blue"
                 label="Skills & Education"

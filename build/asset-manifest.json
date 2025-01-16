@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.af473c8c.css",
+    "main.js": "/home/static/js/main.96176cad.js",
+    "static/js/488.3f432bca.chunk.js": "/home/static/js/488.3f432bca.chunk.js",
+    "static/media/3.gif": "/home/static/media/3.fc9e13cc7678dfd43ed1.gif",
+    "static/media/2.png": "/home/static/media/2.2b65fd08a5b3815887b8.png",
+    "static/media/InterVariable-Italic.woff2": "/home/static/media/InterVariable-Italic.e295f70fe3e2df296c7b.woff2",
+    "static/media/3.png": "/home/static/media/3.c10e4b0ec88a38cfca08.png",
+    "static/media/1.png": "/home/static/media/1.1b858715ad705bceb924.png",
+    "static/media/InterVariable.woff2": "/home/static/media/InterVariable.a0e477f2f1f9d2376fde.woff2",
+    "static/media/primeicons.svg": "/home/static/media/primeicons.6ed59f962963a4a73af2.svg",
+    "static/media/5.png": "/home/static/media/5.f3f9108d1d43d7f33f62.png",
+    "static/media/4.png": "/home/static/media/4.5e4d5ae9129a4ef824e2.png",
+    "static/media/1.gif": "/home/static/media/1.7a21f6bf523fdaf09e76.gif",
+    "static/media/primeicons.eot": "/home/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
+    "static/media/primeicons.woff": "/home/static/media/primeicons.8931fda1930c3bd21e96.woff",
+    "static/media/primeicons.ttf": "/home/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
+    "static/media/2.jpg": "/home/static/media/2.5f7842dc1e8117e4ac4f.jpg",
+    "static/media/3.jpg": "/home/static/media/3.a326dcb427253dba2d02.jpg",
+    "static/media/1.jpeg": "/home/static/media/1.bcde0489a9579d850430.jpeg",
+    "static/media/2.jpeg": "/home/static/media/2.94eba95d8cef5736c1f4.jpeg",
+    "static/media/1.jpg": "/home/static/media/1.2c33db5ebdeff6c9ab00.jpg",
+    "static/media/primeicons.woff2": "/home/static/media/primeicons.024b32cc7bf399b1a847.woff2",
+    "static/media/logo.svg": "/home/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/home/index.html",
+    "main.af473c8c.css.map": "/home/static/css/main.af473c8c.css.map",
+    "main.96176cad.js.map": "/home/static/js/main.96176cad.js.map",
+    "488.3f432bca.chunk.js.map": "/home/static/js/488.3f432bca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af473c8c.css",
+    "static/js/main.96176cad.js"
+  ]
+}
