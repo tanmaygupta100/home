@@ -37,10 +37,10 @@ const Projects = () => {
             subtitle: "JavaScript, React.js, CSS, HTML, Python",
             tags: ["JavaScript", "React.js", "HTML", "Python"],
             image: [
-                "/images/SoundShape/1.png", // Main app here
-                "/images/SoundShape/3.gif", // Gif of button glow and shadows
-                "/images/SoundShape/4.png", // Image of Python UI
-                "/images/SoundShape/5.png", // Image of old UI
+                require("../images/SoundShape/1.png"), // Main app here
+                require("../images/SoundShape/3.gif"), // Gif of button glow and shadows
+                require("../images/SoundShape/4.png"), // Image of Python UI
+                require("../images/SoundShape/5.png"), // Image of old UI
             ],
             desc: [
                 `Remix music in real time, with animated buttons! Create your own slowed-and-reverbed remixes, or sped-up audios.
@@ -63,9 +63,9 @@ const Projects = () => {
             subtitle: "JavaScript, PHP, React.js, Laravel, CSS, HTML",
             tags: ["JavaScript", "React.js", "PHP", "HTML"],
             image: [
-                "/images/pokemon-capitalist/1.png", //
-                "/images/pokemon-capitalist/2.png", //
-                "/images/pokemon-capitalist/3.png", //
+                require("../images/pokemon-capitalist/1.png"), //
+                require("../images/pokemon-capitalist/2.png"), //
+                require("../images/pokemon-capitalist/3.png"), //
             ],
             desc: [
                 `Welcome to Pokémon Capitalist! This is a game where you catch Pokémon, but with a twist!
@@ -84,9 +84,9 @@ const Projects = () => {
             subtitle: "Python, Data Analysis",
             tags: ["Python"],
             image: [
-                "/images/gradiator/1.png", //
-                "/images/gradiator/2.png", //
-                "/images/gradiator/3.png", //
+                require("../images/gradiator/1.png"), //
+                require("../images/gradiator/2.png"), //
+                require("../images/gradiator/3.png"), //
             ],
             desc: [
                 `Processes & renders images through the Perlin algorithm to create cool gradient artworks! Uses the 5 most dominant colours in your image to use them to create heat-map designs.
@@ -110,9 +110,9 @@ const Projects = () => {
             subtitle: "Python, JavaScript, TypeScript, Machine Learning, Language Learning Model, Data Analysis",
             tags: ["Python, JavaScript"],
             image: [
-                "/images/haiku-ponderer/1.png", //
-                "/images/haiku-ponderer/2.png", //
-                "/images/haiku-ponderer/3.png", //
+                require("../images/haiku-ponderer/1.png"), //
+                require("../images/haiku-ponderer/2.png"), //
+                require("../images/haiku-ponderer/3.png"), //
             ],
             desc: [
                 `Trained a machine learning model to generate haikus that adhere to a theme based on a keyword given by a user.
@@ -129,9 +129,9 @@ const Projects = () => {
             subtitle: "JavaScript, PHP, React.js, Laravel, CSS, HTML",
             tags: ["JavaScript", "React.js", "PHP", "HTML"],
             image: [
-                "/images/socialXchange/1.jpg", // Profile screen
-                "/images/socialXchange/2.jpg", // Stocks screen
-                "/images/socialXchange/3.jpg", // Trading screen
+                require("../images/socialXchange/1.jpg"), // Profile screen
+                require("../images/socialXchange/2.jpg"), // Stocks screen
+                require("../images/socialXchange/3.jpg"), // Trading screen
             ],
             desc: [
                 `Designed the front-end for a stocks/trading educational website.
@@ -148,8 +148,8 @@ const Projects = () => {
             subtitle: "C#, Unity, SQL",
             tags: ["C#"],
             image: [
-                "/images/tower-defense/1.jpeg", // Main game screen
-                "/images/tower-defense/2.jpeg", // Unity UI
+                require("../images/tower-defense/1.jpeg"), // Main game screen
+                require("../images/tower-defense/2.jpeg"), // Unity UI
             ],
             desc: [
                 `Developed a real-time strategy game with a web-interface, customizability, & leaderboard database.
@@ -165,10 +165,10 @@ const Projects = () => {
             subtitle: "JavaScript, React.js, TailwindCSS, HTML",
             tags: ["JavaScript", "React.js", "HTML"],
             image: [
-                "/images/portfolio/1.png", //
-                "/images/portfolio/2.png", //
-                "/images/portfolio/3.png", //
-                "/images/portfolio/4.png", //
+                require("../images/portfolio/1.png"), //
+                require("../images/portfolio/2.png"), //
+                require("../images/portfolio/3.png"), //
+                require("../images/portfolio/4.png"), //
             ],
             desc: [
                 `This portfolio itself was coded fully by me! No WordPress, no templates. All React and Tailwind. There's an animated vaporwave grid at the bottom, animated buttons when pressed, and a beach theme across the site.`,
@@ -183,7 +183,7 @@ const Projects = () => {
             subtitle: "Coming soon...",
             tags: ["JavaScript", "PHP", "Python"],
             image: [
-                "/images/kondense/1.gif", // >:)
+                require("../images/kondense/1.gif"), // >:)
             ],
             desc: [
                 `In development.`,
