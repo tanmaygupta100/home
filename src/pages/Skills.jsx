@@ -25,10 +25,9 @@ const Skills = () => {
                     />
                     { skillsBox &&
                         <div
-                            className="p-5 m-5 mb-0 lg:ml-10 ml-0 w-full"
+                            className="p-5 m-5 mb-0 lg:ml-10 ml-0 w-full max-h-[600px] overflow-y-auto"
                             style={{
                                 border:'black 3px solid', borderRadius:'10px', backgroundColor:'#E6EEFF',
-                                maxHeight: '600px',
                             }}
                         >
                             {/* Coding Languages: */}
@@ -76,10 +75,9 @@ const Skills = () => {
                     />
                     { schoolBox &&
                         <div
-                            className="p-5 m-5 lg:ml-10 ml-0 w-full"
+                            className="p-5 m-5 lg:ml-10 ml-0 w-full max-h-[600px] overflow-y-auto"
                             style={{
                                 border:'black 3px solid', borderRadius:'10px', backgroundColor:'#E6EEFF',
-                                maxHeight: '600px',
                             }}
                         >
                             <div className="justify-center items-center flex flex-row">
