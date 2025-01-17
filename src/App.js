@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="main-wrapper">
       <Header />
-      <div className="main-content">
+      <div className="main-wrapper">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/skills" element={<Skills />} />
